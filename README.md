@@ -52,6 +52,46 @@ Compared to the original tutorial, this project includes:
 
 # ⚙️ Setup Instructions (macOS)
 
+## 🐍 Step 1: Install Python 3.13.x
+
+Download and install the latest stable **Python 3.13.x** for macOS:
+
+1. Visit: [https://www.python.org/downloads/macos/](https://www.python.org/downloads/macos/)
+2. Under the Python 3.13.x section, download:
+
+   * **macOS 64-bit universal2 installer** (`python-3.13.x-macos11.pkg`)
+3. Run the `.pkg` installer and follow the GUI instructions.
+4. Confirm installation:
+
+   ```bash
+   python3.13 --version
+   ```
+
+---
+
+## ⚙️ Step 2: Install `uv` – Fast Python Package Manager
+
+[`uv`](https://github.com/astral-sh/uv) is a high-performance, Rust-based tool for managing Python packages and environments.
+
+1. Install `uv`:
+
+   ```bash
+   curl -LsSf https://astral.sh/uv/install.sh | sh
+   ```
+2. Add `uv` to your shell’s `PATH` (if not already):
+
+   ```bash
+   export PATH="$HOME/.local/bin:$PATH"
+   ```
+3. Verify installation:
+
+   ```bash
+   which uv
+   uv --version
+   ```
+
+---
+
 ## ✅ Create and Activate Virtual Environment
 
 ```bash
